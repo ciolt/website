@@ -12,9 +12,9 @@ responsive: true
   <p>Are you getting started on your Ember.js adventure? Check out our official reading material: </p>
 
   <ul>
-    <li><strong>Quick start</strong> <a href="https://guides.emberjs.com/current/getting-started/quick-start/"><i class="icon-link-ext"></i></a>: An easy breazy introduction to the framework.</li>
-    <li><strong>Tutorial</strong> <a href="https://guides.emberjs.com/current/tutorial/ember-cli/"><i class="icon-link-ext"></i></a>: Follow our tutorial to build, and deploy, your first Ember.js application!</li>
-    <li><strong>Guides</strong> <a href="https://guides.emberjs.com/"><i class="icon-link-ext"></i></a>: Whether you're just getting started and want to get familiar with Ember, or you're looking to refresh your knowledge on a certain feature, the Guides are the place for you.</li>
+    <li><strong aria-hidden="true">Quick start</strong> <a alt="Quick start" href="https://guides.emberjs.com/current/getting-started/quick-start/"><i class="icon-link-ext"></i></a>: An easy breazy introduction to the framework.</li>
+    <li><strong aria-hidden="true">Tutorial</strong> <a alt="Tutorial" href="https://guides.emberjs.com/current/tutorial/ember-cli/"><i class="icon-link-ext"></i></a>: Follow our tutorial to build, and deploy, your first Ember.js application!</li>
+    <li><strong aria-hidden="true">Guides</strong> <a alt="Guides" href="https://guides.emberjs.com/"><i class="icon-link-ext"></i></a>: Whether you're just getting started and want to get familiar with Ember, or you're looking to refresh your knowledge on a certain feature, the Guides are the place for you.</li>
   </ul>
 
   <h1>API Reference</h1>
@@ -35,7 +35,7 @@ responsive: true
     </a></li>
   </ul>
 
-  <h1 id="deprecations" class="anchorable-toc">Deprecation Guides <a href="http://emberjs.com/deprecations/"><i class="icon-link-ext"></i></a></h1>
+  <h1 id="deprecations" class="anchorable-toc"><span aria-hidden="true">Deprecation Guides</span> <a alt="Deprecation Guides" href="http://emberjs.com/deprecations/"><i class="icon-link-ext"></i></a></h1>
 
   <p>
     Over the course of the years cruft inevitably sneaks into all software projects. In order to clean up outdated funcionality and guide users, Ember has a deprecation process. You can read our <a href="http://emberjs.com/deprecations/">deprecation guides</a> for more information. You can find below more direct links to Ember and Ember Data versions.
@@ -65,16 +65,16 @@ responsive: true
   </p>
 
   <p>
-    <strong>Ember CLI</strong>: The official command line toolkit to develop Ember applications. Check out the <a href="https://ember-cli.com/user-guide/">User Guide</a>, and the documentation on how to <a href="https://ember-cli.com/extending/">extend Ember CLI</a> as an addon developer.
+    <strong role="heading" aria-level="2">Ember CLI</strong>: The official command line toolkit to develop Ember applications. Check out the <a href="https://ember-cli.com/user-guide/">User Guide</a>, and the documentation on how to <a href="https://ember-cli.com/extending/">extend Ember CLI</a> as an addon developer.
   </p>
 
-  <p><strong>Ember Inspector</strong>: A browser plugin/bookmarklet that helps you inspect and debug applications. Learn how best to use it in the <a href="https://guides.emberjs.com/v2.6.0/ember-inspector/installation/">Ember Inspector Guides</a>.</p>
+  <p><strong role="heading" aria-level="2">Ember Inspector</strong>: A browser plugin/bookmarklet that helps you inspect and debug applications. Learn how best to use it in the <a href="https://guides.emberjs.com/v2.6.0/ember-inspector/installation/">Ember Inspector Guides</a>.</p>
 
-  <p><strong>Liquid Fire</strong>: A toolkit to add animations and transitions to your application. Check out their <a href="http://ember-animation.github.io/liquid-fire/">interactive documentation</a>.</p>
+  <p><strong role="heading" aria-level="2">Liquid Fire</strong>: A toolkit to add animations and transitions to your application. Check out their <a href="http://ember-animation.github.io/liquid-fire/">interactive documentation</a>.</p>
 
-  <p><strong>Ember Twiddle</strong>: Online code editor so you can share working snippets of code or reproductions of bugs. Try it out <a href="http://ember-twiddle.com/">today</a>!</p>
+  <p><strong role="heading" aria-level="2">Ember Twiddle</strong>: Online code editor so you can share working snippets of code or reproductions of bugs. Try it out <a href="http://ember-twiddle.com/">today</a>!</p>
 
-  <p><strong>FastBoot</strong>: Server-side rendering library for Ember applications. Check out the <a href="http://www.ember-fastboot.com/quickstart">Quickstart</a> to get up and running, and the <a href="http://www.ember-fastboot.com/docs/user-guide">User Guide</a> for more detailed information.
+  <p><strong role="heading" aria-level="2">FastBoot</strong>: Server-side rendering library for Ember applications. Check out the <a href="http://www.ember-fastboot.com/quickstart">Quickstart</a> to get up and running, and the <a href="http://www.ember-fastboot.com/docs/user-guide">User Guide</a> for more detailed information.
   </p>
 
   <h1 id="showcase" class="anchorable-toc">Showcase</h1>
@@ -89,7 +89,7 @@ responsive: true
           <img class="showcase--image" src="/images/learn/<%= showcase.image.src %>" alt="<%= showcase.image.alt %>">
         </div>
         <div class="showcase--description">
-          <h2><%= showcase.name %> <a href="<%= replace_current_version showcase.demo %>"><i class="icon-link-ext"></i></a></h2>
+          <h2><span aria-hidden="true"><%= showcase.name %></span> <a alt="<%= showcase.name %>" href="<%= replace_current_version showcase.demo %>"><i class="icon-link-ext"></i></a></h2>
 
           <p>Repository: <a href="<%= showcase.repository %>"><%= showcase.repository %></a></p>
 
@@ -107,7 +107,7 @@ responsive: true
 
   <h1 id="faq">Frequently Asked Questions</h1>
 
-  <h3 id="faq-future-proof">How do I future-proof my Ember.js application?</h3>
+  <h2 id="faq-future-proof">How do I future-proof my Ember.js application?</h2>
 
   <p>
     Ember.js has a strong emphasis on <a href="https://speakerdeck.com/wycats/stability-without-stagnation-lessons-learned-from-shipping-ember-dot-js">Stability without Stagnation</a>, which means that framework developers take great care when designing new functionality to make sure it fits with the existing functionalities, and provides a path forward for users to upgrade without being subjected to churn.
@@ -122,7 +122,7 @@ responsive: true
     In short, the best way to make sure you have a healthy application is to keep an eye on RFCs &mdash; remembering they document intent but not necessarily the final implementation, &mdash; keep your application clean of deprecations, and when possible test your application against beta and canary.
   </p>
   
-  <h3 id="faq-component-data">Should components load data?</h3>
+  <h2 id="faq-component-data">Should components load data?</h2>
   
   <p>
     You can find more information at the <a href="https://youtu.be/y7aHMj6VVJY?t=1129">Boston meetup Core Team panel</a>
